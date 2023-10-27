@@ -1,0 +1,357 @@
+:root {
+    --black: #000;
+    --white: #f2f3f4;
+    --grey: #d5d5d5;
+    --green: #2ec434;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 50px 120px;
+    z-index: 1;
+    background-color: var(--white);
+}
+
+.logo {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+}
+
+.logo-link {
+    padding: 10px;
+    border: 1px solid var(--green);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.logo-link span:nth-child(1) {
+    margin: 0 10px 0 0;
+}
+
+.nav-item {
+    display: inline;
+    margin: 0 14px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+}
+
+.nav-link {
+    transition: 0.5s ease 0s;
+    padding: 9px;
+    border: 1px solid var(--white);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    border: 1px solid var(--green);
+}
+
+.nav-link.active {
+    color: var(--white);
+    border: 1px solid var(--green);
+    background-color: var(--green);
+}
+
+.banner-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 120px 50px 120px;
+    padding: 50px 0 0 0;
+    border-top: 2px solid var(--grey);
+}
+
+.banner {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.5s ease 0s;
+}
+
+.left-arrow,
+.right-arrow {
+    position: absolute;
+    top: 50%;
+    margin: 0 15px;
+    color: var(--white);
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.8));
+    transition: 0.5s ease 0s;
+    cursor: pointer;
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+    color: var(--green);
+}
+
+.left-arrow {
+    left: 0;
+}
+
+.right-arrow {
+    right: 0;
+}
+
+.banner-image {
+    width: 1465px;
+    height: 689px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.info-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 120px;
+    padding: 0 0 50px 0;
+    border-bottom: 2px solid var(--grey);
+}
+
+.info-section-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 100px;
+    width: 250px;
+}
+
+.info-item-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 30px 0;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--grey);
+}
+
+.info-item-description {
+    text-align: center;
+    margin: 30px 0 20px 0;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+}
+
+.info-item-link a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    border-radius: 8px;
+    background-color: var(--grey);
+    transition: background-color 0.5s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.info-item-link a:hover {
+    color: var(--white);
+    background-color: var(--green);
+}
+
+.info-item-link a:active {
+    transform: scale(0.96);
+}
+
+.info-section-down {
+    margin: 0 400px;
+    text-align: center;
+}
+
+.info-heading {
+    margin: 0 0 30px 0;
+}
+
+.info-description {
+    font-size: 18px;
+    line-height: 1.88;
+}
+
+.questions-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px 120px;
+    padding: 0 0 50px 0;
+    border-bottom: 2px solid var(--grey);
+}
+
+.quastion {
+    text-align: center;
+    width: 45%;
+}
+
+.quastion:nth-child(1) {
+    margin: 0 0 100px 0;
+}
+
+.quastion:nth-child(2) {
+    margin: 0 0 100px auto;
+}
+
+.quastion:nth-child(3) {
+    margin: 0 0 100px 0;
+}
+
+.quastion:nth-child(4) {
+    margin: 0 0 0 auto;
+}
+
+.question-answer {
+    margin: 30px 0 0 0;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    line-height: 1.88;
+}
+
+.catalog-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 120px;
+    border-bottom: 2px solid var(--grey);
+}
+
+.product {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 0 50px 0;
+    width: 70%;
+}
+
+.product:nth-child(1),
+.product:nth-child(2),
+.product:nth-child(3) {
+    padding: 0 0 50px 0;
+    border-bottom: 2px solid var(--grey);
+}
+
+.product-img {
+    width: 380px;
+    height: 525px;
+    border-radius: 8px;
+    background-color: var(--grey);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.product-text {
+    width: 40%;
+    text-align: center;
+}
+
+.product-description {
+    margin: 30px 0;
+    letter-spacing: 0.05em;
+    line-height: 1.88;
+}
+
+.product-link a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    border: 1px solid var(--green);
+    border-radius: 8px;
+    transition: 0.5s ease 0s;
+}
+
+.product-link a span {
+    margin: 0 5px;
+}
+
+.product-link a:hover {
+    color: var(--white);
+    background-color: var(--green);
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 120px 0 120px;
+}
+
+.contact-map {
+    margin: 30px 0;
+    width: 80%;
+    height: 625px;
+    border-radius: 8px;
+    background-color: var(--grey);
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-item-heading {
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 0.02em;
+    transform: translateX(-25px);
+}
+
+.contact-item-description {
+    margin: 15px 0 0 0;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    transform: translateX(25px);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 120px;
+    padding: 50px 0 0 0;
+    border-top: 2px solid var(--grey);
+    letter-spacing: 0.05em;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials a {
+    transition: 0.5s ease 0s;
+}
+
+.socials a:nth-child(2) {
+    margin: 0 50px;
+}
+
+.socials a:hover {
+    color: var(--green);
+}
